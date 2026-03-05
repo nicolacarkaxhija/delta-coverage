@@ -1,0 +1,63 @@
+{
+  "name": "delta-coverage",
+  "version": "1.0.0-alpha.0",
+  "description": "Framework-agnostic NPM module and CLI tool to enforce code coverage thresholds on modified Git files/lines",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "bin": {
+    "delta-coverage": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "cross-env NODE_OPTIONS=--max-old-space-size=4096 vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "coverage",
+    "git",
+    "delta",
+    "cli"
+  ],
+  "author": "Nicola Carkaxhija",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolacarkaxhija/delta-coverage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolacarkaxhija/delta-coverage/issues"
+  },
+  "homepage": "https://github.com/nicolacarkaxhija/delta-coverage#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "cosmiconfig": "^8.3.6",
+    "micromatch": "^4.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/micromatch": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.39.4",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.4.0",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^1.6.0"
+  }
+}
