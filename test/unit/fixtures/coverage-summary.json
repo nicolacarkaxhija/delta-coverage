@@ -1,0 +1,44 @@
+{
+  "total": {
+    "lines": {
+      "pct": 85
+    },
+    "statements": {
+      "pct": 85
+    },
+    "functions": {
+      "pct": 90
+    },
+    "branches": {
+      "pct": 80
+    }
+  },
+  "/project/src/foo.ts": {
+    "lines": {
+      "pct": 90
+    },
+    "statements": {
+      "pct": 90
+    },
+    "functions": {
+      "pct": 100
+    },
+    "branches": {
+      "pct": 80
+    }
+  },
+  "/project/src/bar.ts": {
+    "lines": {
+      "pct": 60
+    },
+    "statements": {
+      "pct": 60
+    },
+    "functions": {
+      "pct": 50
+    },
+    "branches": {
+      "pct": 50
+    }
+  }
+}
